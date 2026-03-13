@@ -1,0 +1,27 @@
+[project]
+name = "doc2md-imglinks"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Konstantin Levinski", email = "konstantin.levinski@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pillow>=12.1.1",
+    "pymupdf>=1.27.2",
+    "rich>=14.3.3",
+    "typer>=0.24.1",
+]
+
+[project.scripts]
+doc2md-imglinks = "doc2md_imglinks:main"
+
+[build-system]
+requires = ["uv_build>=0.10.0,<0.11.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+]
