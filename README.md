@@ -6,13 +6,13 @@ Convert PDFs to Markdown and extract embedded images, linking them from the Mark
 
 ```bash
 uv sync
-uv run doc2md-imglinks convert path/to/input.pdf -o out/
+uv run doc2md-imglinks path/to/input.pdf -o out/
 ```
 
 ## Example
 
 ```bash
-uv run doc2md-imglinks convert ./seal_costing.pdf -o ./out --render-pages
+uv run doc2md-imglinks ./seal_costing.pdf -o ./out --render-pages
 ```
 
 Outputs:
